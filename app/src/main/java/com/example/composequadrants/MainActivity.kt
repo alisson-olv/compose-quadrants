@@ -17,6 +17,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -45,28 +46,28 @@ fun ComposeQuadrantApp() {
     Column(Modifier.fillMaxWidth()) {
         Row(Modifier.weight(1f)) {
             ComposeQuadrantsItems(
-                title = "Text composable",
-                description = "Displays text and follows Material Design guidelines.",
+                title = stringResource(R.string.title_1),
+                description = stringResource(R.string.description1),
                 backgroundColor = Color.Green,
                 modifier = Modifier.weight(1f)
             )
             ComposeQuadrantsItems(
-                title = "Image composable",
-                description = "Creates a composable that lays out and draws a given Painter class object.",
+                title = stringResource(R.string.title2),
+                description = stringResource(R.string.description2),
                 backgroundColor = Color.Yellow,
                 modifier = Modifier.weight(1f)
             )
         }
         Row(Modifier.weight(1f)) {
             ComposeQuadrantsItems(
-                title = "Row composable",
-                description = "A layout composable that places its children in a horizontal sequence.",
+                title = stringResource(R.string.title3),
+                description = stringResource(R.string.description3),
                 backgroundColor = Color.Cyan,
                 modifier = Modifier.weight(1f)
             )
             ComposeQuadrantsItems(
-                title = "Column composable",
-                description = "A layout composable that places its children in a vertical sequence.",
+                title = stringResource(R.string.title4),
+                description = stringResource(R.string.description4),
                 backgroundColor = Color.LightGray,
                 modifier = Modifier.weight(1f)
             )
